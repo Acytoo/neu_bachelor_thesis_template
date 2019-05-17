@@ -11,13 +11,20 @@ BIBFILE=ref/*.bib
 
 CLSFILES= $(PACKAGE).cls
 
+ifdef SystemRoot
+	RM = del /Q
+	OPEN = start
+else
+	RM = rm -f
+	OPEN = xdg-open
+endif
 
-.PHONY: all clean thesis view cleanall FORCE_MAKE
+.PHONY: all clean view cleanall FORCE_MAKE
 
 all: $(THESISMAIN).pdf
 
 view: all
-	xdg-open main.pdf
+	$(OPEN) main.pdf
 
 $(THESISMAIN).pdf: $(CLSFILES)  FORCE_MAKE
 	latexmk $(LATEXMKOPTS) $(THESISMAIN)
