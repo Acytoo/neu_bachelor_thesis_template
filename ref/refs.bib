@@ -1,0 +1,196 @@
+@Comment Alec Chen, 2019.5.13
+@ARTICLE{730558, 
+author={L. {Itti} and C. {Koch} and E. {Niebur}}, 
+journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+title={A model of saliency-based visual attention for rapid scene analysis}, 
+year={1998}, 
+volume={20}, 
+number={11}, 
+pages={1254-1259}, 
+abstract={A visual attention system, inspired by the behavior and the neuronal architecture of the early primate visual system, is presented. Multiscale image features are combined into a single topographical saliency map. A dynamical neural network then selects attended locations in order of decreasing saliency. The system breaks down the complex problem of scene understanding by rapidly selecting, in a computationally efficient manner, conspicuous locations to be analyzed in detail.}, 
+keywords={computer vision;target tracking;feature extraction;image recognition;neural nets;saliency;visual attention;rapid scene analysis;topographical saliency map;dynamical neural network;scene understanding;feature extraction;target detection;visual search;Image analysis;Layout;Brain modeling;Computer architecture;Biological system modeling;Visual system;Neural networks;Feature extraction;Object detection;Hardware}, 
+doi={10.1109/34.730558}, 
+ISSN={0162-8828}, 
+month={Nov},}
+
+
+@inproceedings{Ma:2003:CIA:957013.957094,
+ author = {Ma, Yu-Fei and Zhang, Hong-Jiang},
+ title = {Contrast-based Image Attention Analysis by Using Fuzzy Growing},
+ booktitle = {Proceedings of the Eleventh ACM International Conference on Multimedia},
+ series = {MULTIMEDIA '03},
+ year = {2003},
+ isbn = {1-58113-722-2},
+ location = {Berkeley, CA, USA},
+ pages = {374--381},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/957013.957094},
+ doi = {10.1145/957013.957094},
+ acmid = {957094},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {attention detection, contrast analysis, fuzzy growing, image analysis, visual attention model},
+}
+
+
+@inproceedings{Harel:2006:GVS:2976456.2976525,
+ author = {Harel, Jonathan and Koch, Christof and Perona, Pietro},
+ title = {Graph-Based Visual Saliency},
+ booktitle = {Proceedings of the 19th International Conference on Neural Information Processing Systems},
+ series = {NIPS'06},
+ year = {2006},
+ location = {Canada},
+ pages = {545--552},
+ numpages = {8},
+ url = {http://dl.acm.org/citation.cfm?id=2976456.2976525},
+ acmid = {2976525},
+ publisher = {MIT Press},
+ address = {Cambridge, MA, USA},
+}
+
+@ARTICLE{7222459, 
+author={J. {Zhang} and M. {Wang} and S. {Zhang} and X. {Li} and X. {Wu}}, 
+journal={IEEE Transactions on Neural Networks and Learning Systems}, 
+title={Spatiochromatic Context Modeling for Color Saliency Analysis}, 
+year={2016}, 
+volume={27}, 
+number={6}, 
+pages={1177-1189}, 
+abstract={Visual saliency is one of the most noteworthy perceptual abilities of human vision. Recent progress in cognitive psychology suggests that: 1) visual saliency analysis is mainly completed by the bottom-up mechanism consisting of feedforward low-level processing in primary visual cortex (area V1) and 2) color interacts with spatial cues and is influenced by the neighborhood context, and thus it plays an important role in a visual saliency analysis. From a computational perspective, the most existing saliency modeling approaches exploit multiple independent visual cues, irrespective of their interactions (or are not computed explicitly), and ignore contextual influences induced by neighboring colors. In addition, the use of color is often underestimated in the visual saliency analysis. In this paper, we propose a simple yet effective color saliency model that considers color as the only visual cue and mimics the color processing in V1. Our approach uses region-/boundary-defined color features with spatiochromatic filtering by considering local color-orientation interactions, therefore captures homogeneous color elements, subtle textures within the object and the overall salient object from the color image. To account for color contextual influences, we present a divisive normalization method for chromatic stimuli through the pooling of contrary/complementary color units. We further define a color perceptual metric over the entire scene to produce saliency maps for color regions and color boundaries individually. These maps are finally globally integrated into a one single saliency map. The final saliency map is produced by Gaussian blurring for robustness. We evaluate the proposed method on both synthetic stimuli and several benchmark saliency data sets from the visual saliency analysis to salient object detection. The experimental results demonstrate that the use of color as a unique visual cue achieves competitive results on par with or better than 12 state-of-the-art approaches.}, 
+keywords={feedforward;image colour analysis;image texture;spatiochromatic context modeling;color saliency analysis;human vision;cognitive psychology;visual saliency analysis;feedforward low-level processing;primary visual cortex;spatial cues;saliency modeling approach;visual cue;color image processing;region-boundary-defined color features;spatiochromatic filtering;local color-orientation interactions;homogeneous color elements;subtle textures;chromatic stimuli;contrary-complementary color units;color perceptual metric;Gaussian blurring;Image color analysis;Visualization;Feature extraction;Computational modeling;Color;Context modeling;Context;Color;context;region and boundary;spatiochromatic filtering;visual saliency.;Color;context;region and boundary;spatiochromatic filtering;visual saliency}, 
+doi={10.1109/TNNLS.2015.2464316}, 
+ISSN={2162-237X}, 
+month={June},}
+
+
+@ARTICLE{726791,
+author={Y. {Lecun} and L. {Bottou} and Y. {Bengio} and P. {Haffner}}, 
+journal={Proceedings of the IEEE}, 
+title={Gradient-based learning applied to document recognition}, 
+year={1998}, 
+volume={86}, 
+number={11}, 
+pages={2278-2324}, 
+abstract={Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of 2D shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank cheque is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal cheques. It is deployed commercially and reads several million cheques per day.}, 
+keywords={optical character recognition;multilayer perceptrons;backpropagation;convolution;gradient-based learning;document recognition;multilayer neural networks;back-propagation;gradient based learning technique;complex decision surface synthesis;high-dimensional patterns;handwritten character recognition;handwritten digit recognition task;2D shape variability;document recognition systems;field extraction;segmentation recognition;language modeling;graph transformer networks;GTN;multimodule systems;performance measure minimization;cheque reading;convolutional neural network character recognizers;Neural networks;Pattern recognition;Machine learning;Optical character recognition software;Character recognition;Feature extraction;Multi-layer neural network;Optical computing;Hidden Markov models;Principal component analysis}, 
+doi={10.1109/5.726791}, 
+ISSN={0018-9219}, 
+month={Nov},}
+
+
+@INPROCEEDINGS{4270072, 
+author={T. {Liu} and J. {Sun} and N. {Zheng} and X. {Tang} and H. {Shum}}, 
+booktitle={2007 IEEE Conference on Computer Vision and Pattern Recognition}, 
+title={Learning to Detect A Salient Object}, 
+year={2007}, 
+volume={}, 
+number={}, 
+pages={1-8}, 
+abstract={We study visual attention by detecting a salient object in an input image. We formulate salient object detection as an image segmentation problem, where we separate the salient object from the image background. We propose a set of novel features including multi-scale contrast, center-surround histogram, and color spatial distribution to describe a salient object locally, regionally, and globally. A conditional random field is learned to effectively combine these features for salient object detection. We also constructed a large image database containing tens of thousands of carefully labeled images by multiple users. To our knowledge, it is the first large image database for quantitative evaluation of visual attention algorithms. We validate our approach on this image database, which is public available with this paper.}, 
+keywords={image colour analysis;image segmentation;object detection;very large databases;visual databases;salient object detection;image segmentation problem;multiscale contrast;center-surround histogram;color spatial distribution;conditional random field;large image database;visual attention algorithms;Object detection;Image databases;Face detection;Labeling;Asia;Image segmentation;Histograms;Humans;Visual system;Physiology}, 
+doi={10.1109/CVPR.2007.383047}, 
+ISSN={1063-6919}, 
+month={June},}
+
+
+@article{Itti2009AMO,
+  title={A Model of Saliency-Based Visual Attention for Rapid Scene Analysis},
+  author={Laurent Itti and Christof Koch and Ernst Niebur},
+  journal={IEEE Trans. Pattern Anal. Mach. Intell.},
+  year={2009},
+  volume={20},
+  pages={1254-1259}
+}
+
+
+@article{Felzenszwalb:2004:EGI:981793.981796,
+ author = {Felzenszwalb, Pedro F. and Huttenlocher, Daniel P.},
+ title = {Efficient Graph-Based Image Segmentation},
+ journal = {Int. J. Comput. Vision},
+ issue_date = {September 2004},
+ volume = {59},
+ number = {2},
+ month = sep,
+ year = {2004},
+ issn = {0920-5691},
+ pages = {167--181},
+ numpages = {15},
+ url = {https://doi.org/10.1023/B:VISI.0000022288.19776.77},
+ doi = {10.1023/B:VISI.0000022288.19776.77},
+ acmid = {981796},
+ publisher = {Kluwer Academic Publishers},
+ address = {Hingham, MA, USA},
+ keywords = {clustering, graph algorithm, image segmentation, perceptual organization},
+}
+
+
+@article{ChengPAMI,
+  author = {Ming-Ming Cheng and Niloy J. Mitra and Xiaolei Huang and Philip H. S. Torr and Shi-Min Hu},
+  title = {Global Contrast based Salient Region Detection},
+  year  = {2015},
+  journal= {IEEE TPAMI},
+  volume={37}, 
+  number={3}, 
+  pages={569--582}, 
+  doi = {10.1109/TPAMI.2014.2345401},
+}
+
+
+@conference{13iccv/Cheng_Saliency,
+  title={Efficient Salient Region Detection with Soft Image Abstraction},
+  author={Ming-Ming Cheng and Jonathan Warrell and Wen-Yan Lin and Shuai Zheng and Vibhav Vineet and Nigel Crook},
+  booktitle={IEEE ICCV},
+  pages={1529--1536},
+  year={2013},
+}
+
+
+@article{SalObjSurvey,
+  author = {Ali Borji and Ming-Ming Cheng and Huaizu Jiang and Jia Li},
+  title = {Salient Object Detection: A Survey},
+  journal = {ArXiv e-prints},
+  archivePrefix = {arXiv},
+  eprint = {arXiv:1411.5878},
+  year = {2014},
+}
+
+
+@article{SalObjBenchmark,
+  author = {Ali Borji and Ming-Ming Cheng and Huaizu Jiang and Jia Li},
+  title = {Salient Object Detection: A Benchmark},
+  journal = {IEEE TIP},
+  year={2015},
+  volume={24},
+  number={12},
+  pages={5706-5722},
+  doi={10.1109/TIP.2015.2487833}, 
+}
+
+
+@ARTICLE{1316848, 
+author={Y. {Boykov} and V. {Kolmogorov}}, 
+journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+title={An experimental comparison of min-cut/max- flow algorithms for energy minimization in vision}, 
+year={2004}, 
+volume={26}, 
+number={9}, 
+pages={1124-1137}, 
+abstract={Minimum cut/maximum flow algorithms on graphs have emerged as an increasingly useful tool for exactor approximate energy minimization in low-level vision. The combinatorial optimization literature provides many min-cut/max-flow algorithms with different polynomial time complexity. Their practical efficiency, however, has to date been studied mainly outside the scope of computer vision. The goal of this paper is to provide an experimental comparison of the efficiency of min-cut/max flow algorithms for applications in vision. We compare the running times of several standard algorithms, as well as a new algorithm that we have recently developed. The algorithms we study include both Goldberg-Tarjan style "push -relabel" methods and algorithms based on Ford-Fulkerson style "augmenting paths." We benchmark these algorithms on a number of typical graphs in the contexts of image restoration, stereo, and segmentation. In many cases, our new algorithm works several times faster than any of the other methods, making near real-time performance possible. An implementation of our max-flow/min-cut algorithm is available upon request for research purposes.}, 
+keywords={computational complexity;computer vision;minimax techniques;image restoration;image segmentation;stereo image processing;directed graphs;tree searching;minimum cut-maximum flow algorithms;energy minimization;low level vision;graph algorithms;combinatorial optimization;polynomial time complexity;computer vision;Goldberg-Tarjan style methods;push-relabel methods;Ford-Fulkerson style algorithms;augmenting path algorithms;image restoration;image stereo;image segmentation;Minimization methods;Image restoration;Stereo vision;Labeling;Iterative algorithms;Clustering algorithms;Computer vision;Application software;Image segmentation;Simulated annealing;Index Terms- Energy minimization;graph algorithms;minimum cut;maximum flow;image restoration;segmentation;stereo;multicamera scene reconstruction.;Algorithms;Artificial Intelligence;Cluster Analysis;Energy Transfer;Image Enhancement;Image Interpretation, Computer-Assisted;Imaging, Three-Dimensional;Information Storage and Retrieval;Pattern Recognition, Automated;Photogrammetry;Photography;Reproducibility of Results;Sensitivity and Specificity}, 
+doi={10.1109/TPAMI.2004.60}, 
+ISSN={0162-8828}, 
+month={Sep.},}
+
+@INPROCEEDINGS{1544820, 
+author={P. {Kohli} and P. H. S. {Torr}}, 
+booktitle={Tenth IEEE International Conference on Computer Vision (ICCV'05) Volume 1}, 
+title={Efficiently solving dynamic Markov random fields using graph cuts}, 
+year={2005}, 
+volume={2}, 
+number={}, 
+pages={922-929 Vol. 2}, 
+abstract={In this paper, we present a fast new fully dynamic algorithm for the st-mincut/max-flow problem. We show how this algorithm can be used to efficiently compute MAP estimates for dynamically changing MRF models of labeling problems in computer vision, such as image segmentation. Specifically, given the solution of the max-flow problem on a graph, we show how to efficiently compute the maximum flow in a modified version of the graph. Our experiments showed that the time taken by our algorithm is roughly proportional to the number of edges whose weights were different in the two graphs. We test the performance of our algorithm on one particular problem: the object-background segmentation problem for video and compare it with the best known st-mincut algorithm. The results show that the dynamic graph cut algorithm is much faster than its static counterpart and enables real time image segmentation. It should be noted that our method is generic and can be used to yield similar improvements in many other cases that involve dynamic change in the graph}, 
+keywords={computer vision;graph theory;image segmentation;Markov processes;maximum likelihood estimation;optimisation;random processes;dynamic Markov random fields;dynamic algorithm;st-mincut algorithm;max-flow algorithm;maximum a-posteriori estimates;computer vision;object-background segmentation;dynamic graph cut algorithm;real time image segmentation;Markov random fields;Heuristic algorithms;Image segmentation;Computer vision;Inference algorithms;Computational geometry;Tree graphs;Belief propagation;Performance analysis;Application software}, 
+doi={10.1109/ICCV.2005.81}, 
+ISSN={1550-5499}, 
+month={Oct},}
