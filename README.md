@@ -9,9 +9,15 @@
 如果你觉得本模板帮助了你，可以给上面两个项目送一颗小星星
 
 ---------------
-## 使用方法
+### 使用方法
 * `make`    生成论文 main.pdf；
 * `make view`    生成论文 main.pdf 并查看生成的论文；
 * `make clean`     删除中间文件（不含 main.pdf）；
 * `make cleanall`  删除中间文件和生成的论文（main.pdf）；
+----------------
+### 下载
+
+[Release](https://github.com/Acytoo/neu_bachelor_thesis_template/releases)
+
+或者单击右上角绿色的按钮。
 
