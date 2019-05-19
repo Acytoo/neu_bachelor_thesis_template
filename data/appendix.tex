@@ -1,5 +1,29 @@
 \appendix
 \chapter{附录A}
+
+\section{代码}
+
+代码的字体使用了Monaco， 如果你没有这种字体，很可能无法通过编译，这时候可以打开cls文件注释掉代码段的Monaco字体
+
+或者下载安装这种字体。
+
+插入代码的示例
+
+\begin{lstlisting}[title=代码的名字并且可以删除, language=C++]
+// hello.cc 5.19 2019
+#include <iostream>
+
+using std::cout;
+using std::endl;
+
+int main() {
+  cout << "Hello" << endl; // 打印 "Hello"
+  return 0;
+}
+
+\end{lstlisting}
+
+
 \section*{图A.1}
 
 \section*{图A.2}

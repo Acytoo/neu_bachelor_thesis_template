@@ -237,22 +237,24 @@ afterskip={1.0ex}
 \renewcommand{\bottomfraction}{0.65}
 \renewcommand{\floatpagefraction}{0.60}
 
-\def\insertpic#1#2{
+\def\insertfixpic#1#2#3{
   \begin{figure}[ht]
     % \setcounter{figure}{2} 
     \begin{center}     
       \includegraphics[width=14.5cm]{#1}
-      \caption{\songti\zihao{5}{#2}}
+      \caption{\songti\zihao{-4}{#2}}
+      \label{#3}
     \end{center} 
   \end{figure}    
 }
 
-\def\insertpics#1#2#3{
+\def\insertpic#1#2#3#4{
   \begin{figure}[ht]
     % \setcounter{figure}{2} 
     \begin{center}     
       \includegraphics[width=#1]{#2}
-      \caption{\songti\zihao{5}{#3}}
+      \caption{\songti\zihao{-4}{#3}}
+      \label{#4}
     \end{center} 
   \end{figure}    
 }
@@ -266,6 +268,37 @@ afterskip={1.0ex}
 % ------------代码------------%
 \RequirePackage{listings}%代码排版
 \usepackage[noend]{algpseudocode}
+\usepackage{fontspec}
+\setmonofont{Monaco}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{
+  % basicstyle=\footnotesize,           % the size of the fonts that are used for the code
+  basicstyle=\footnotesize\ttfamily,
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  % stepnumber=2,                   % the step between two line-numbers. If it's 1, each line 
+                                  % will be numbered
+  % numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=shadowbox,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  keywordstyle=\color{blue},          % keyword style
+  commentstyle=\color{dkgreen},       % comment style
+  stringstyle=\color{mauve},         % string literal style
+  xleftmargin=2em,xrightmargin=2em, aboveskip=1em,
+}
+
 % ------------算法------------%
 \RequirePackage{algorithmicx,algorithm}%算法排版
 \RequirePackage{amsfonts}

@@ -4,7 +4,19 @@
 \section{二级标题}
 示例内容
 \subsection{三级标题}
-示例内容
+
+插入图片：显著性的样例图片，固定长度
+\insertfixpic{../figures/fig_sal_res1.png}{一个显著性的例子}{fig:fig1}
+插入图片，自定义大小
+\insertpic{1.0cm}{../figures/stop.jpg}{另一个自定义大小的例子}{figref:hahaha}
+
+
+这样可以指向上面的图片与公式，如图\myref{figref:hahaha}与式\myref{equ:saliency}，点击试试。
+
+
+
+复杂的图片控制，如一排多个图片等，根据自己的需求写吧，不二次封装了。
+
 
 \subsection{三级标题}
 示例内容
