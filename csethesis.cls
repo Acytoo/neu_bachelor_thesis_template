@@ -52,10 +52,10 @@ afterskip={1.0ex}
 % ----------页面设置----------%
 \RequirePackage{geometry} % 调整页面式样
 \geometry{
-  left=31.75mm,
-  right=31.75mm,
-  top=25.4mm,
-  bottom=25.4mm,
+  left=30mm,
+  right=25mm,
+  top=25mm,
+  bottom=25mm,
   headheight=7mm,
   headsep=7mm,
   % textheight=253mm,
