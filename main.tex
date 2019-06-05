@@ -5,8 +5,14 @@
 \include{data/titlepage}%扉页
 \include{data/declaration}%独创性声明
 \include{data/abstract}%摘要页
-\contents%目录
 
+\contents%目录
+\fancyhead[R]{\songti\zihao{5}  第\thechapter 章  \leftmark } % 适应学校的zz要求
+
+% \fancypagestyle{contents}
+% \clearpage
+% \phantom{s}
+% \thispagestyle{empty}
 
 %主体部分
 \mainmatter
@@ -21,9 +27,11 @@
 
 %结尾部分
 \backmatter
+\fancyhead[R]{\songti\zihao{5}  \leftmark}  
 \addcontentsline{toc}{chapter}{参考文献}
 \bibliography{ref/refs}%参考文献
 % \bibliography{ref/981796}
-\include{data/appendix}%附录
+% \include{data/appendix}%附录
 \include{data/ack}%致谢
 \end{document}
+

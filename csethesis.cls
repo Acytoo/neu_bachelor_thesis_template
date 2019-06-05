@@ -1,5 +1,5 @@
 \ProvidesClass{csethesis}
-\LoadClass[UTF8,cs4size,a4paper]{ctexbook}%要求从目录页双面，默认twoside
+\LoadClass[twoside,openright,UTF8,cs4size,a4paper]{ctexbook}%要求从目录页双面，默认twoside
 \RequirePackage{pdfpages}%插入pdf文档
 
 % http://aao.neu.edu.cn/2018/1112/c2570a42991/pagem.htm 毕业设计要求
@@ -12,11 +12,10 @@
 % --------行距---------%
 \RequirePackage{setspace}
 \renewcommand{\baselinestretch}{1.5} %\normalsize %1.5倍行距
-% \showthe\baselineskip
 
 % --------章节设置-------%
 \CTEXsetup[
-name={,},                   % 默认{第,章}
+name={},                   % 默认{第,章}
 number={\arabic{chapter}},  %章节编号设置为阿拉伯数字格式
 format={\centering\heiti\zihao{-2}},  %{\centering\zihao{-3}\heiti},
 % nameformat={},
@@ -67,20 +66,31 @@ afterskip={1.0ex}
 \RequirePackage{fancyhdr}%页眉页脚宏包
 \renewcommand{\headrulewidth}{0.4pt}%页眉线宽
 \renewcommand{\footrulewidth}{0pt}%页脚线宽
-\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
-\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}{}}
 
 % 默认页面页眉页脚样式
 \fancypagestyle{plain}{
   \fancyhf{}
   \fancyfoot[C]{\zihao{5}-\ \thepage\ -}% 页码位于页脚居中
 
-  % 左右两栏页眉，左为论文题目右为当前章
+  % 左右两栏页眉，左为"东北大学本科毕业设计（论文）" 右为当前章
   \fancyhead[L]{\songti\zihao{5}东北大学本科毕业设计（论文）} % 要求宋体
-  \fancyhead[R]{\songti\zihao{5}\leftmark}
+
+  \fancyhead[R]{\songti\zihao{5}  第\thechapter 章  \leftmark } % 适应学校的zz要求
+
+  \ifnum \thechapter=0
+  \fancyhead[R]{\songti\zihao{5}目录}
+  % \else\thechapter>0
+  % \fancyhead[R]{\songti\zihao{5}  第\thechapter 章  \leftmark } % 适应学校的zz要求
+  \fi
+  
+  % \fancyhead[R]{\songti\zihao{5}  \leftmark}  
 
 }
 \pagestyle{plain}
+
+\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+% \renewcommand{\sectionmark}[1]{ \markright{#1}{} }
+
 
 % 采用带圈数字符号代替*号脚注
 \xeCJKsetcharclass{`①}{`⑩}{1}
@@ -159,7 +169,7 @@ afterskip={1.0ex}
     {\zihao{-2}\textbf{ABSTRACT}}}
   \addcontentsline{toc}{chapter}{ABSTRACT}
   \thispagestyle{eabstract}
-
+  \pagestyle{contents}
 }%开始部分定义
 {\setcounter{secnumdepth}{3}}%结束部分定义
 
@@ -203,8 +213,8 @@ afterskip={1.0ex}
 \renewcommand{\cftchapleader}{\cftdotfill{\cftchapdotsep}}
 
 \newcommand{\contents}{
+  \pagestyle{contents}          %
   \tableofcontents
-  \thispagestyle{contents}
 
   % \ifodd {
   % \clearpage
@@ -264,7 +274,7 @@ afterskip={1.0ex}
     % \setcounter{figure}{2} 
     \begin{center}     
       \includegraphics[width=14.5cm]{#1}
-      \caption{\songti\zihao{-4}{#2}}
+      \caption{\songti\zihao{5}{#2}}
       \label{#3}
     \end{center} 
   \end{figure}    
@@ -274,11 +284,11 @@ afterskip={1.0ex}
   \begin{figure}[ht]
     % \setcounter{figure}{2} 
     \begin{center}     
-      \includegraphics[width=#1]{#2}
-      \caption{\songti\zihao{-4}{#3}}
+      \includegraphics[#2]{#1}
+      \caption{\songti\zihao{5}{#3}}
       \label{#4}
-    \end{center} 
-  \end{figure}    
+    \end{center}
+  \end{figure}  
 }
 
 \RequirePackage{ccaption} %中英文题注
