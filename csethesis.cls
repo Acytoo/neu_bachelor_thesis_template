@@ -301,7 +301,7 @@ afterskip={1.0ex}
 \RequirePackage{listings}%代码排版
 \usepackage[noend]{algpseudocode}
 \usepackage{fontspec}
-\setmonofont{Monaco}
+% \setmonofont{Monaco}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -345,8 +345,7 @@ numbers,
 sort&compress,
 super,
 square]{natbib} %参数代表：数字,排序与压缩,上标，方括号
-
-% \bibliographystyle{GBT7714-2005NLang} %参考文献格式设为GBT7714-2005N.bst
+% \bibliographystyle{gbt7714-2005} %参考文献格式设为GBT7714-2005N
 
 \RequirePackage[
 draft=false,
@@ -354,7 +353,7 @@ colorlinks=true,
 CJKbookmarks=true,
 linkcolor=black,
 citecolor=red,
-urlcolor=blue,
+urlcolor=black,
 hyperindex]{hyperref}%引用链接颜色设置
 
 % ----------------附录------------%
