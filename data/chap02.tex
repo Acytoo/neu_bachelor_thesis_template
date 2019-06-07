@@ -58,7 +58,7 @@
 \label{example_sub5_sal}
 \includegraphics[width=2.7cm,height=1.8cm]{../figures/ex5.png}
 }
-\caption{这是显著性对象的样例}
+\caption{\songti\zihao{5}这是显著性对象的样例}
 \label{fig:example}
 \end{figure}
 
@@ -78,3 +78,26 @@
 \subsection{三级标题}
 示例内容
 
+
+
+\begin{table}[htbp]
+  \centering
+  \caption{\songti\zihao{5}自适应阈值-减小步长寻找更优阈值}
+  \label{table:adaptive_parameters_more}
+  \setlength{\tabcolsep}{5mm}{
+  \begin{tabular}{ccccc}
+    \toprule
+    倍数 & 平均精确率 & 平均召回率 & F-score & 计算耗时 \\
+    \midrule
+    1.25  &  81.4937\%  &  67.8341\%   & 74.0392\% & 23s \\
+    1.30  &  80.2888\%  &  68.7326\%  &  74.0627\% & 22s \\
+    1.35  &  79.2812\%  &  69.7478\%   & 74.2096\% & 23s \\
+    1.40  &  78.0842\%  &  70.5439\%  &  74.1228\% & 22s \\
+    1.45  &  77.0670\%  &  71.4551\%   & 74.1550\% & 22s \\
+    1.50  &  75.9396\%  &  72.3223\%   & 74.0869\% & 22s \\
+    1.55  &  74.5063\%  &  73.0072\%   & 73.7492\% & 21s \\
+    1.60  &  73.2367\%  &  73.8578\%   & 73.5459\% & 21s \\
+    1.65  &  72.0713\%  &  74.5796\%   & 73.3040\% & 21s \\
+    \bottomrule
+  \end{tabular}}
+\end{table}
