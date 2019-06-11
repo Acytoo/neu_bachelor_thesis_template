@@ -21,7 +21,8 @@ format={\centering\heiti\zihao{-2}},  %{\centering\zihao{-3}\heiti},
 % nameformat={},
 aftername={\quad},
 % titleformat={},
-beforeskip={1.0ex},
+% fixskip = true,
+beforeskip={-5ex},
 afterskip={1.0ex}
 ]{chapter}
 

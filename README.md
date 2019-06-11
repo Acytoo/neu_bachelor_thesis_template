@@ -37,3 +37,6 @@
 * 如果缺少相应的字体可能会无法编译或者编译结果与预期不同（虽然这种情况通常不会出现），请自行安装相应的字体。
 
 * 附录里的代码使用了Monaco字体，如果你的电脑没有安装这种字体，可以在这里[下载](https://github.com/todylu/monaco.ttf)安装，或者删掉[cls](https://github.com/Acytoo/neu_bachelor_thesis_template/blob/master/csethesis.cls)文件中，代码段字体的设置项。
+
+* 关于章标题的上下间距，可以参考这个issue:[设置每章的标题的上下间距在哪里可以调整？](https://github.com/ustctug/ustcthesis/issues/102)
+
